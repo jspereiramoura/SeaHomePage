@@ -49,3 +49,12 @@ document.getElementById("menu").addEventListener("click", () => {
 document.getElementById("close").addEventListener("click", () => {
     container_menu.style.left = "-100vw";
 });
+
+function keydownCheck(event) {
+    if (event.keyCode == 116 || event.keyCode == 82) {
+        event.preventDefault();
+        event.keyCode = 0;
+        window.location.reload();
+    }
+}
+document.addEventListener("keydown", keydownCheck);
