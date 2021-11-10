@@ -75,6 +75,7 @@ window.onload = () => {
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
             videoId: 'K1QICrgxTjA',
+            autoplay: 1,
             events: {
                 'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange
