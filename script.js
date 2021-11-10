@@ -58,3 +58,7 @@ function keydownCheck(event) {
     }
 }
 document.addEventListener("keydown", keydownCheck);
+
+window.onload = () => {
+    document.getElementById('video').src = 'https://www.youtube-nocookie.com/embed/K1QICrgxTjA?controls=0&amp;showinfo=0&amp;autohide=1&autoplay=1';
+}
