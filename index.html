@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
+<body onload="function() {document.getElementById('video').play();}">
     <div class="container">
-        <iframe id="video" src="https://www.youtube.com/embed/K1QICrgxTjA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;autohide=1" allow="autoplay; encrypted-media;"></iframe>
+        <iframe id="video" src="https://www.youtube-nocookie.com/embed/K1QICrgxTjA?autoplay=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;loop=1" allow="autoplay;loop;"></iframe>
         <img src="assets/mask.jpg" draggable="false" alt="mask" id="mask">
         <h1 class="impact-text">Lorem Ipsum</h1>
     </div>
@@ -29,6 +29,5 @@
     </menu>
 </body>
 <script src="script.js"></script>
-<script src="player.js"></script>
 
 </html>
